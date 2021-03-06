@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Медицина</title>
+	<link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">	
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="img/logo.png"></a>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__nav-menu">
+                        <a href="./index.html">
+                            <li>Чайка</li>
+                        </a>
+                        <a href="./gallery.html">
+                            <li>Фото</li>
+                        </a>
+                        <a href="./schedule.html">
+                            <li>Графік змін</li>
+                        </a>
+                        <a href="./contacts.html">
+                            <li>Контакти</li>
+                        </a>
+                    </ul>
+                    <div class="header__contact">
+                        <a href="tel:+380660005545">+380660005545</a>
+                    </div>
+                    <div class="header__networks">
+                        <div class="header__instagram">
+                            <a href="https://www.instagram.com/chayka.boguslav/">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="14" cy="14" r="13.5" stroke="black"></circle>
+                                    <path class="black"
+                                          d="M16.6884 8H11.3115C9.48554 8 8 9.48561 8 11.3116V16.6884C8 18.5145 9.48554 20 11.3115 20H16.6884C18.5145 20 20 18.5144 20 16.6884V11.3116C20.0001 9.48561 18.5145 8 16.6884 8Z"
+                                          fill="black"></path>
+                                    <path class="white"
+                                          d="M13.9998 10.908C12.2947 10.908 10.9077 12.295 10.9077 14.0001C10.9077 15.705 12.2947 17.092 13.9998 17.092C15.7048 17.092 17.0918 15.705 17.0918 14.0001C17.0918 12.295 15.7048 10.908 13.9998 10.908ZM13.9998 16.0272C12.8819 16.0272 11.9724 15.1178 11.9724 14C11.9724 12.8821 12.8818 11.9726 13.9998 11.9726C15.1177 11.9726 16.0271 12.8821 16.0271 14C16.0271 15.1178 15.1176 16.0272 13.9998 16.0272Z"
+                                          fill="white"></path>
+                                    <path class="white"
+                                          d="M17.2215 10.0054C17.0164 10.0054 16.8149 10.0884 16.67 10.2339C16.5244 10.3787 16.4407 10.5803 16.4407 10.7861C16.4407 10.9914 16.5245 11.1929 16.67 11.3384C16.8148 11.4832 17.0164 11.5669 17.2215 11.5669C17.4274 11.5669 17.6282 11.4832 17.7737 11.3384C17.9192 11.1929 18.0023 10.9913 18.0023 10.7861C18.0023 10.5803 17.9192 10.3787 17.7737 10.2339C17.6289 10.0884 17.4274 10.0054 17.2215 10.0054Z"
+                                          fill="white"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="header__facebook">
+                            <a href="https://www.facebook.com/doz.chayka/">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="14" cy="14" r="13.5" stroke="black"></circle>
+                                    <path class="facebook"
+                                          d="M16.9995 8.0025L15.4434 8C13.6952 8 12.5654 9.15914 12.5654 10.9532V12.3148H11.0008C10.8656 12.3148 10.7561 12.4245 10.7561 12.5597V14.5325C10.7561 14.6677 10.8657 14.7772 11.0008 14.7772H12.5654V19.7553C12.5654 19.8905 12.6749 20 12.8101 20H14.8514C14.9866 20 15.0961 19.8904 15.0961 19.7553V14.7772H16.9255C17.0607 14.7772 17.1702 14.6677 17.1702 14.5325L17.1709 12.5597C17.1709 12.4947 17.1451 12.4326 17.0993 12.3866C17.0535 12.3407 16.9911 12.3148 16.9261 12.3148H15.0961V11.1606C15.0961 10.6058 15.2283 10.3241 15.951 10.3241L16.9993 10.3238C17.1344 10.3238 17.2438 10.2142 17.2438 10.0791V8.24718C17.2438 8.11223 17.1345 8.00275 16.9995 8.0025Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <input id="hamburger" class="hamburger" type="checkbox"/>
+                <label class="hamburger" for="hamburger">
+                    <i></i>
+                    <text>
+                        <close class="close">закрыть</close>
+                        <open class="open">меню</open>
+                    </text>
+                </label>
+                <section class="drawer-list">
+                    <ul>
+                        <li><a href="./index.html">Чайка</a></li>
+                        <li><a href="./gallery.html">Фото</a></li>
+                        <li><a href="./schedule.html">Графік змін</a></li>
+                        <li><a href="./contacts.html">Контакти</a></li>
+                        <div class="header__networks">
+                            <li class="header__instagram">
+                                <a href="https://www.instagram.com/chayka.boguslav/">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="14" cy="14" r="13.5" stroke="black"></circle>
+                                    <path class="black"
+                                    d="M16.6884 8H11.3115C9.48554 8 8 9.48561 8 11.3116V16.6884C8 18.5145 9.48554 20 11.3115 20H16.6884C18.5145 20 20 18.5144 20 16.6884V11.3116C20.0001 9.48561 18.5145 8 16.6884 8Z"
+                                    fill="black"></path>
+                                    <path class="white"
+                                    d="M13.9998 10.908C12.2947 10.908 10.9077 12.295 10.9077 14.0001C10.9077 15.705 12.2947 17.092 13.9998 17.092C15.7048 17.092 17.0918 15.705 17.0918 14.0001C17.0918 12.295 15.7048 10.908 13.9998 10.908ZM13.9998 16.0272C12.8819 16.0272 11.9724 15.1178 11.9724 14C11.9724 12.8821 12.8818 11.9726 13.9998 11.9726C15.1177 11.9726 16.0271 12.8821 16.0271 14C16.0271 15.1178 15.1176 16.0272 13.9998 16.0272Z"
+                                    fill="white"></path>
+                                    <path class="white"
+                                    d="M17.2215 10.0054C17.0164 10.0054 16.8149 10.0884 16.67 10.2339C16.5244 10.3787 16.4407 10.5803 16.4407 10.7861C16.4407 10.9914 16.5245 11.1929 16.67 11.3384C16.8148 11.4832 17.0164 11.5669 17.2215 11.5669C17.4274 11.5669 17.6282 11.4832 17.7737 11.3384C17.9192 11.1929 18.0023 10.9913 18.0023 10.7861C18.0023 10.5803 17.9192 10.3787 17.7737 10.2339C17.6289 10.0884 17.4274 10.0054 17.2215 10.0054Z"
+                                    fill="white"></path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="header__facebook">
+                            <a href="https://www.facebook.com/doz.chayka/">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="14" cy="14" r="13.5" stroke="black"></circle>
+                                <path class="facebook"
+                                d="M16.9995 8.0025L15.4434 8C13.6952 8 12.5654 9.15914 12.5654 10.9532V12.3148H11.0008C10.8656 12.3148 10.7561 12.4245 10.7561 12.5597V14.5325C10.7561 14.6677 10.8657 14.7772 11.0008 14.7772H12.5654V19.7553C12.5654 19.8905 12.6749 20 12.8101 20H14.8514C14.9866 20 15.0961 19.8904 15.0961 19.7553V14.7772H16.9255C17.0607 14.7772 17.1702 14.6677 17.1702 14.5325L17.1709 12.5597C17.1709 12.4947 17.1451 12.4326 17.0993 12.3866C17.0535 12.3407 16.9911 12.3148 16.9261 12.3148H15.0961V11.1606C15.0961 10.6058 15.2283 10.3241 15.951 10.3241L16.9993 10.3238C17.1344 10.3238 17.2438 10.2142 17.2438 10.0791V8.24718C17.2438 8.11223 17.1345 8.00275 16.9995 8.0025Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </div>
+                <li class="header__contact">
+                    <a href="tel:+380660005545">+380660005545</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+</header>
+		<section class="first-screen">
+			<div class="container">
+				<div class="first-screen__content">
+					<div class="first-screen__img">
+						<img src="" alt="">
+					</div>
+					<div class="first-screen__text">
+						<div class="text__info">
+							<h2>We Design and Develop</h2>
+							<p>Как принято считать, представители современных социальных резервов подвергнуты целой серии независимых исследований. Как уже неоднократно упомянуто, акционеры крупнейших компаний объективно рассмотрены соответствующими инстанциями.</p>
+						</div>
+					</div>
+				</div>		
+			</div>	
+		</section>
+		<div class="about">
+			<div class="container">
+				<div class="about__content">
+					<p>Кожен з батьків бажає бачити свою дитину здоровою. Саме для відновлення та покращення стану здоров’я, зміцнення імунітету, підвищення резервних можливостей всіх органів та систем, зниження фізичної та психологічної втомлюваності та відновленню сну працює колектив практикуючих лікарів та сестер медичного центру закладу.
+
+						До послуг відпочиваючих надаються різноманітні процедури в фізіотерапевтичному відділенні, сучасний інгаляторій, штучна соляна кімната, аромотерапія, кімната водолікування. А смачні та корисні фіточаї та синглетно кисневі коктейлі до вподоби усім дітям закладу.
+
+						Санаторний режим дня, ранкова гімнастика, кліматотерапія, прогулянки, лікувальна фізкультура нівелюють фізичну втомлюваність та посилюють оздоровчий ефект. Процедури масажу (ручного та апаратного) та індивідуальні заняття з інструктором ЛФК сприяють  відновленню постави та посиленню тонусу м’язів.
+
+					У разі загострення хронічних захворювань, розвитку алергії, отриманні травми та за будь-якою медичною допомогою цілодобово можна звернутися до лікарів, які нададуть необхідну невідкладну та швидку допомогу, а у разі необхідності діагностична, спеціалізована та консультативна допомога буде надана в БЦРЛ.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="gallery">
+			<div class="container">
+				<div class="gallery__content">
+					<div id="lightgallery">
+						<a href="img/img1.jpg">
+							<img src="img/img1.jpg"/>
+						</a>
+						<a href="img/img2.jpg">
+							<img src="img/img2.jpg"/>
+						</a>
+						<a href="img/img3.jpg">
+							<img src="img/img3.jpg"/>
+						</a>
+						<a href="img/img4.jpg">
+							<img src="img/img4.jpg"/>
+						</a>
+
+						<a href="img/img5.jpg">
+							<img src="img/img5.jpg"/>
+						</a>
+						<a href="img/img6.jpg">
+							<img src="img/img6.jpg"/>
+						</a>
+						<a href="img/img7.jpg">
+							<img src="img/img7.jpg"/>
+						</a>
+						<a href="img/img8.jpg">
+							<img src="img/img8.jpg"/>
+						</a>
+						<a href="img/img9.jpg">
+							<img src="img/img9.jpg"/>
+						</a>
+						<a href="img/img10.jpg">
+							<img src="img/img10.jpg"/>
+						</a>
+						<a href="img/img11.jpg">
+							<img src="img/img11.jpg"/>
+						</a>
+						<a href="img/img12.jpg">
+							<img src="img/img12.jpg"/>
+						</a>
+						<a href="img/img13.jpg">
+							<img src="img/img13.jpg"/>
+						</a>
+						<a href="img/img14.jpg">
+							<img src="img/img14.jpg"/>
+						</a>
+						<a href="img/img15.jpg">
+							<img src="img/img15.jpg"/>
+						</a>
+						<a href="img/img16.jpg">
+							<img src="img/img16.jpg"/>
+						</a>
+						<a href="img/img17.jpg">
+							<img src="img/img17.jpg"/>
+						</a>
+						<a href="img/img18.jpg">
+							<img src="img/img18.jpg"/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__rights">
+                    <a href="./index.html"> Piroll Design, Inc.</a>
+                    <p>© 2017 Piroll. All rights reserved.</p>
+                </div>
+                <div class="footer__communication">
+                    <div class="footer__contacts">
+                        <a class="email" href="mailto:doz.chayka@ukr.net">
+                            doz.chayka@ukr.net
+                        </a>
+                        <a class="tel" href="tel:+38 066 000 55 45">
+                            +38 066 000 55 45
+                        </a>
+                    </div>
+                    <div class="footer__networks">
+                        <div class="footer__instagram">
+                            <a href="https://www.instagram.com/chayka.boguslav/">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="14" cy="14" r="13.5" stroke="black"></circle>
+                                    <path class="black"
+                                          d="M16.6884 8H11.3115C9.48554 8 8 9.48561 8 11.3116V16.6884C8 18.5145 9.48554 20 11.3115 20H16.6884C18.5145 20 20 18.5144 20 16.6884V11.3116C20.0001 9.48561 18.5145 8 16.6884 8Z"
+                                          fill="black"></path>
+                                    <path class="white"
+                                          d="M13.9998 10.908C12.2947 10.908 10.9077 12.295 10.9077 14.0001C10.9077 15.705 12.2947 17.092 13.9998 17.092C15.7048 17.092 17.0918 15.705 17.0918 14.0001C17.0918 12.295 15.7048 10.908 13.9998 10.908ZM13.9998 16.0272C12.8819 16.0272 11.9724 15.1178 11.9724 14C11.9724 12.8821 12.8818 11.9726 13.9998 11.9726C15.1177 11.9726 16.0271 12.8821 16.0271 14C16.0271 15.1178 15.1176 16.0272 13.9998 16.0272Z"
+                                          fill="white"></path>
+                                    <path class="white"
+                                          d="M17.2215 10.0054C17.0164 10.0054 16.8149 10.0884 16.67 10.2339C16.5244 10.3787 16.4407 10.5803 16.4407 10.7861C16.4407 10.9914 16.5245 11.1929 16.67 11.3384C16.8148 11.4832 17.0164 11.5669 17.2215 11.5669C17.4274 11.5669 17.6282 11.4832 17.7737 11.3384C17.9192 11.1929 18.0023 10.9913 18.0023 10.7861C18.0023 10.5803 17.9192 10.3787 17.7737 10.2339C17.6289 10.0884 17.4274 10.0054 17.2215 10.0054Z"
+                                          fill="white"></path>
+                                </svg>
+                            </a>
+                        </div>
+    
+                        <div class="footer__facebook">
+                            <a href="https://www.facebook.com/doz.chayka/">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="14" cy="14" r="13.5" stroke="black"></circle>
+                                    <path d="M16.9995 8.0025L15.4434 8C13.6952 8 12.5654 9.15914 12.5654 10.9532V12.3148H11.0008C10.8656 12.3148 10.7561 12.4245 10.7561 12.5597V14.5325C10.7561 14.6677 10.8657 14.7772 11.0008 14.7772H12.5654V19.7553C12.5654 19.8905 12.6749 20 12.8101 20H14.8514C14.9866 20 15.0961 19.8904 15.0961 19.7553V14.7772H16.9255C17.0607 14.7772 17.1702 14.6677 17.1702 14.5325L17.1709 12.5597C17.1709 12.4947 17.1451 12.4326 17.0993 12.3866C17.0535 12.3407 16.9911 12.3148 16.9261 12.3148H15.0961V11.1606C15.0961 10.6058 15.2283 10.3241 15.951 10.3241L16.9993 10.3238C17.1344 10.3238 17.2438 10.2142 17.2438 10.0791V8.24718C17.2438 8.11223 17.1345 8.00275 16.9995 8.0025Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+    </footer>
+    
+
+<script src="js/lightgallery.min.js"></script>
+<!--<script src="js/lg-share.min.js"></script>-->
+<script src="js/lg-fullscreen.min.js"></script>
+<!--<script src="js/lg-zoom.min.js"></script>-->
+<!--<script src="js/lg-autoplay.min.js"></script>-->
+<!--<script src="js/lg-hash.min.js"></script>-->
+<!--<script src="js/lg-thumbnail.min.js"></script>-->
+<!--<script src="js/lg-thumbnail.min.js"></script>-->
+<!--<script src="js/lg-thumbnail.min.js"></script>-->
+<!--<script src="js/lg-thumbnail.min.js"></script>-->
+
+	<script>
+		 lightGallery(document.getElementById('lightgallery'), {
+        thumbnail: true,
+        animateThumb: false,
+        showThumbByDefault: true
+    });
+	</script>
+
+
+
+</body>
+</html>
