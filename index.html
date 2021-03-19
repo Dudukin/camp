@@ -104,7 +104,7 @@
     <div class="container">
         <div class="first-screen__content">
             <div class="first-screen__text">
-                <h2>We Design and Develop</h2>
+                <h2>Доз "Чайка"</h2>
                 <p>Как принято считать, представители современных социальных резервов подвергнуты целой серии
                         независимых исследований. Как уже неоднократно упомянуто, акционеры крупнейших компаний
                         объективно рассмотрены соответствующими инстанциями.</p>
@@ -124,7 +124,7 @@
     <div class="categories__content">
         <div class="categories__item">
             <div class="categories__item_img">
-                  <a href="./leisure.html"><img src="img/grey.png" alt=""></a>
+                  <a href="./leisure.html"><img src="img/dozvillya.jpg" alt=""></a>
             </div>
             <a href="./leisure.html" class="categories__item_hover">
                 <span>Дозвілля</span>
@@ -132,7 +132,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./leisure.html"><img src="img/grey.png" alt=""></a>
+                <a href="./leisure.html"><img src="img/medytsina.jpg" alt=""></a>
             </div>
             <a href="./leisure.html" class="categories__item_hover">
                 <span>Медицина</span>
@@ -140,7 +140,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                 <a href="./feeding.html"><img src="img/grey.png" alt=""></a>
+                 <a href="./feeding.html"><img src="img/kharchuvannya.jpg" alt=""></a>
             </div>
             <a href="./feeding.html" class="categories__item_hover">
               <span>Харчування</span>
@@ -148,7 +148,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./residence.html"><img src="img/grey.png" alt=""></a>                
+                <a href="./residence.html"><img src="img/prozhivannya.jpg" alt=""></a>                
             </div>
             <a href="./residence.html" class="categories__item_hover">
                <span>Проживання</span>
@@ -157,7 +157,7 @@
 
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./territory.html"><img src="img/grey.png" alt=""></a>
+                <a href="./territory.html"><img src="img/teritoriya.jpg" alt=""></a>
             </div>
             <a href="./territory.html" class="categories__item_hover">
                <span>Територія</span>
@@ -165,7 +165,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                 <a href="./sport.html"><img src="img/grey.png" alt=""></a>
+                 <a href="./sport.html"><img src="img/sport.jpg" alt=""></a>
             </div>
               <a href="./sport.html" class="categories__item_hover">
                <span>Спорт</span>
@@ -173,7 +173,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./excursions.html"><img src="img/grey.png" alt=""></a>
+                <a href="./excursions.html"><img src="img/eks.jpg" alt=""></a>
             </div>
           <a href="./excursions.html" class="categories__item_hover">
                <span>Екскурсії та походи</span>
@@ -181,7 +181,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./infrastructure.html"><img src="img/grey.png" alt=""></a>
+                <a href="./infrastructure.html"><img src="img/infra.jpg" alt=""></a>
             </div>
           <a href="./infrastructure.html" class="categories__item_hover">
                <span>інфраструктура</span>
@@ -189,7 +189,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./awards.html"><img src="img/grey.png" alt=""></a>
+                <a href="./awards.html"><img src="img/nagorody.jpg" alt=""></a>
             </div>
             <a href="./awards.html" class="categories__item_hover">
                <span>Нагороди</span>
@@ -197,7 +197,7 @@
         </div>
         <div class="categories__item">
             <div class="categories__item_img">
-                <a href="./attention.html"><img src="img/grey.png" alt=""></a>
+                <a href="./attention.html"><img src="img/zvertayemo_uvahu.jpg" alt=""></a>
             </div>
              <a href="./attention.html" class="categories__item_hover">
                <span>Звертаємо увагу батьків</span>
@@ -380,7 +380,7 @@
 <div class="form-wrapper">
    <div class="forms">
     <div class="forms__text">
-        <span>Текст</span>
+        <span>Оформить заявку</span>
     </div>
     <div class="cross">
         <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="48" height="48"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
@@ -410,7 +410,10 @@
     </div>
 </form>
 <form action="" class="textarea">
+        <div class="forms__content">
+          <span>Сообщение</span>
     <textarea name="text"></textarea>
+    </div>
     <input type="submit" value="Отправить">
 </form>
 </div>
@@ -433,6 +436,18 @@
         animateThumb: false,
         showThumbByDefault: true
     });
+</script>
+<script>
+    let closeBtn = document.querySelectorAll('.cross')[0];
+    let formWrapper = document.querySelectorAll('.form-wrapper')[0];
+
+    closeBtn.addEventListener('click', () => {
+        formWrapper.classList.toggle('form-active');
+    })  
+
+    setTimeout(() => {
+        formWrapper.classList.toggle('form-active');
+    }, 5000)
 </script>
 
 </body>

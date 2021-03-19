@@ -234,8 +234,6 @@ body , h1, h2, h3 , ul , li , p , a {
 .first-screen {
 	padding-bottom: 165px;
 	padding-top: 200px;
-	
-	background: darkgrey;
 }
 
 .first-screen__content {
@@ -289,7 +287,7 @@ body , h1, h2, h3 , ul , li , p , a {
     display: flex;
     flex-direction: column;
     background: #fff;
-    opacity: .7;
+    opacity: .85;
     color: #000;
     padding: 30px;
     box-sizing: border-box;
@@ -610,7 +608,6 @@ body , h1, h2, h3 , ul , li , p , a {
 	font-size: 18px;
 	color: white;
 	padding-bottom: 5px;
-	width: 55%;
 }
 
 
@@ -704,17 +701,21 @@ body , h1, h2, h3 , ul , li , p , a {
 /*--------------------- forms ----------------------------*/
 
 .form-wrapper {
+	z-index: 1000;
+    top: 0;
+    right: 0;
+    position: fixed;
 	width: 100%;
-	height: 200vh;
+	height: 100vh;
 	background-color: rgba(0,0,0,0.5);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	display: none;
 }
 
 .forms {
-	height: 950px;
-	width: 700px;
+	width: 450px;
 	background: #fff;
 	padding: 0 30px;
 	box-sizing: border-box;
@@ -732,7 +733,8 @@ body , h1, h2, h3 , ul , li , p , a {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 45px 0;
+	margin: 20px 0;
+	width: 100%;
 }
 
 
@@ -741,7 +743,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	outline: none;
 	width: 100%;
 	height: 55px;
-	margin-top: 20px;
+	margin-top: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	box-sizing: border-box;
@@ -751,7 +753,7 @@ body , h1, h2, h3 , ul , li , p , a {
 
 .forms__text {
 	text-align: center;
-	padding-top: 70px;
+	padding-top: 30px;
 }
 
 .textarea {
@@ -762,7 +764,7 @@ body , h1, h2, h3 , ul , li , p , a {
 
 .textarea textarea {
 	width: 100%;
-	height: 250px;
+	height: 100px;
 	resize: none;
 	outline: none;
 	border: 2px solid #CAC9C0;
@@ -782,11 +784,15 @@ body , h1, h2, h3 , ul , li , p , a {
 .textarea input {
 	height: 60px;
 	width: 160px;
-	margin-top: 40px;
 	background: #B0E0E6;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+.form-active {
+	display: flex;
 }
 
 
