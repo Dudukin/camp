@@ -234,13 +234,13 @@ body , h1, h2, h3 , ul , li , p , a {
 .first-screen {
 	padding-bottom: 165px;
 	padding-top: 200px;
+	background: #cccccc;
 }
 
 .first-screen__content {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	align-items: flex-start;
 }
 
 
