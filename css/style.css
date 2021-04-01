@@ -109,6 +109,11 @@ body , h1, h2, h3 , ul , li , p , a {
 	font-weight: 400;
 	font-size: 18px;
 	color: #191919;	
+	transition: .2s ease;
+}
+
+.header__nav-menu a:hover {
+	color: #B0E0E6;
 }
 
 .header__contact {
@@ -166,7 +171,6 @@ body , h1, h2, h3 , ul , li , p , a {
 .btn-wrapper:hover .button__hover {
 	top: -100px;
 	left: -50px;
-	transition: 900ms ease;
 	z-index: 0;
 }
 
@@ -188,6 +192,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	left: -700px;
 	background: #B0E0E6;
 	z-index: 0;
+	transition: .5s;
 }
 
 /*-------------------------------- FIRST SCREEN ---------------------------------*/
@@ -240,7 +245,13 @@ body , h1, h2, h3 , ul , li , p , a {
 .first-screen__content {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.first-screen {
+	background: url(../img/chayka.png) no-repeat center center;
+	height: 50vh;
 }
 
 
@@ -296,6 +307,7 @@ body , h1, h2, h3 , ul , li , p , a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .categories__item_hover span {
@@ -304,7 +316,6 @@ body , h1, h2, h3 , ul , li , p , a {
 	font-size: 30px;
 	text-transform: uppercase;
 }
-
 
 
 
@@ -1134,7 +1145,7 @@ label.hamburger > i:after {
 }
 label.hamburger {
   position: fixed;
-  top: 50px;
+  top: 40px;
   right: 15px;
 }
 /**
@@ -1163,6 +1174,74 @@ body {
 	display: flex;
 }
 
+
+.categories__item {
+	box-sizing: border-box;
+}
+
+.leisure ,
+.sport {
+	padding-right: 2.5px;
+}
+
+.medical ,
+.excursions {
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+.feeding , 
+.infrastructure {
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+.territory , 
+.attention {
+	border-right: none;
+}
+
+.residence , 
+.history {
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+}
+
+.territory , 
+.attention {
+	padding-left: 2.5px;
+}
+.leisure,
+.medical , 
+.feeding , 
+.residence ,
+.territory {
+	padding-bottom: 2.5px;
+}
+
+.sport ,
+.excursions ,
+.infrastructure ,
+.awards ,
+.attention {
+	padding-top: 2.5px;
+}
+
+
+.drawer-list .header__instagram img {
+	width: 35px;
+	height: 35px;
+}
+
+.drawer-list .header__facebook img {
+	width: 35px;
+	height: 35px;
+}
+
+.forms__content span {
+	margin-bottom: 5px;	
+}
+
 /*----------------------- media -------------------------- */
 
 
@@ -1171,7 +1250,30 @@ body {
 
 
 
+
 @media screen  and (max-width: 1000px) {
+
+	.categories__item {
+		padding: 0;
+	}
+
+	.leisure > div > a > img,
+	.medical > div > a > img,
+	.feeding div > a > img {
+		margin-top: 0;
+	}
+
+	.attention {
+		margin: auto;
+	}
+
+	.categories__item img {
+		margin-top: 5px;
+	}
+	.categories__content {
+		justify-content: space-between;
+	}
+
 	.categories__content > div {
 		width: 33%;
 	}
@@ -1254,6 +1356,29 @@ body {
 	.categories__content > div {
 		width: 50%;
 	}
+
+	.categories__item {
+		box-sizing: border-box;
+	}
+
+	.leisure  ,
+	.feeding ,
+	.territory ,
+	.excursions ,
+	.awards
+
+	  {
+		padding-right: 2.5px;
+	}
+
+	.medical ,
+	.residence ,
+	.sport ,
+	.infrastructure ,
+	.attention {
+		padding-left: 2.5px;
+	}
+
 }
 
 @media screen  and (max-width: 625px) {
@@ -1353,7 +1478,29 @@ body {
 		height: 250px;
 	}
 
+		.categories__item img
+	
+	 {
+		margin: 0;
 
+	}
+
+	.categories__item {
+		padding: 0;
+	}
+
+	.categories__item {
+		margin-top: 5px;
+	}
+
+	.categories__item:first-child {
+		margin: 0;
+	}
+
+	.first-screen__content {
+		align-items: center;
+		text-align: center;
+	}
 
 }
 
