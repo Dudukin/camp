@@ -1004,7 +1004,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-img-wrap {
   position: absolute;
-  padding: 0 5px;
+  padding: 55px 5px;
   left: 0;
   right: 0;
   top: 0;

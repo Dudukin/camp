@@ -155,6 +155,19 @@ body , h1, h2, h3 , ul , li , p , a {
 	width: 80px;
 }
 
+.header__logo a:nth-child(2) {
+	font-family: 'Gardens';
+    font-weight: 400;
+    font-size: 18px;
+    color: #191919;
+    text-transform: uppercase;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+}
+
 .btn-wrapper {
 	margin-top: 40px;
 	overflow: hidden;
@@ -232,9 +245,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	border: 3px solid #B0E0E6;
 }*/
 
-.first-screen__content .button {
-	display: flex;
-}
+
 
 .first-screen {
 	padding-bottom: 165px;
@@ -242,12 +253,6 @@ body , h1, h2, h3 , ul , li , p , a {
 	background: #cccccc;
 }
 
-.first-screen__content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
 
 .first-screen {
 	background: url(../img/chayka.png) no-repeat center center;
@@ -382,8 +387,20 @@ body , h1, h2, h3 , ul , li , p , a {
 
 .about__content {
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 80px;
+}
 
+.about__text {
+	margin-top: 30px;
+}
+
+.about__title span {
+	font-family: "Gardens";
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 2em;
+	color: #787878;
+	text-transform: uppercase;
 }
 
 
@@ -1312,7 +1329,7 @@ body {
 
 
 
-@media screen  and (max-width: 850px) {
+@media screen  and (max-width: 985px) {
 	.first-screen__text {
 		width: 65%;
 	}
