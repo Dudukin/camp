@@ -263,7 +263,9 @@ body , h1, h2, h3 , ul , li , p , a {
 
 /*----------- categories ---------------------------*/
 
-
+.categories {
+	margin-top: 5px;
+}
 .categories__content {
 	margin: 0 auto;
 	width: 100%;
