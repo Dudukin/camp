@@ -221,7 +221,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	font-family: "Gardens";
 	font-weight: 400;
 	font-size: 18px;
-	color: #787878;
+	color: #000;
 	line-height: 1.6;
 	margin-top: 15px;
 }
@@ -324,9 +324,59 @@ body , h1, h2, h3 , ul , li , p , a {
 	text-transform: uppercase;
 }
 
+/*------------------------ about-camp -------------------------*/
 
+.about-camp {
+	margin: 150px 0; 
+}
 
+.about-camp__items {
+	display: flex;
+	flex-wrap : wrap;
+	justify-content: space-around;
+	line-height: 170%;
+}
 
+.about-camp__item:nth-child(3) {
+	margin-top: 100px;
+}
+
+.about-camp__item:nth-child(4) {
+	margin-top: 100px;
+}
+
+.about-camp__item {
+	flex-basis: 40%;
+}
+
+.about-camp__text p {
+	font-family: 'Gardens';
+	font-weight: 400;
+	font-size: 18px;
+	color: #000;
+}
+
+.about-camp__text > p:nth-child(1) {
+	font-weight: 700;
+}
+
+.about-camp__text > p:nth-child(2) {
+	margin-top: 10px;
+}
+
+.about-camp__items {
+	position: relative;
+}
+
+.about-camp__items::before {
+	content: 'Дитячий табір санаторного типу «ЧАЙКА» в Київській області для дітей 6-17 років.';
+	position: absolute;
+	top: -75px;
+	font-family: 'Gardens';
+	font-weight: 700;
+	font-size: 18px;
+	color: #000;
+}
 
 /*--------------  statistics        --------------------------*/
 
@@ -384,7 +434,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 2em;
-	color: #787878;
+	color: #000;
 }
 
 .about__content {
@@ -401,7 +451,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 2em;
-	color: #787878;
+	color: #000;
 	text-transform: uppercase;
 }
 
@@ -458,7 +508,7 @@ body , h1, h2, h3 , ul , li , p , a {
 
 .info__item h2 ,
 .info__item p  {
-	color: #787878;
+	color: #000;
 	font-family: 'Gardens';
 	font-weight: 400;	
 }
@@ -487,6 +537,7 @@ body , h1, h2, h3 , ul , li , p , a {
 	align-items: center;
 	padding: 0 25px;
 	box-sizing: border-box;
+	margin-top: 130px;
 }
 
 
@@ -542,7 +593,7 @@ body , h1, h2, h3 , ul , li , p , a {
 .schedule p {
 	font-family: 'Gardens';
 	font-weight: 400;
-	color: #787878;
+	color: #000;
 }
 
 .schedule__items {
@@ -1265,8 +1316,11 @@ body {
 
 
 
-
-
+@media screen  and (max-width: 1251px) {
+	.categories__item.infrastructure > .categories__item_hover span {
+		font-size: 25px;
+	}
+}
 
 
 
@@ -1521,12 +1575,25 @@ body {
 		text-align: center;
 	}
 
+	.about-camp__item {
+		flex-basis: 100%;
+	}
+
+	.about-camp__text {
+		text-align: center;
+	}
+
+	.about-camp__item:nth-child(2) {
+		margin-top: 100px;
+	}
+
+	.about-camp__items::before {
+		text-align: center;
+	}
+
 }
 
-@media screen  and (max-width: 455px) {
 
-
-}
 
 
 @media screen  and (max-width: 429px) {
@@ -1540,8 +1607,10 @@ body {
 
 
 
-@media screen  and (max-width: 410px) {
-
+@media screen  and (max-width: 412px) {
+	.about-camp__item.supremacy {
+		margin-top: 10px;
+	}
 }
 
 
