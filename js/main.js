@@ -46,12 +46,13 @@ window.onload = function () {
         let telInput = document.querySelector('.forms input[name="tel"]');
         let textInput = document.querySelector('.forms textarea');
         let formSubmit = document.querySelector('.forms input[type="submit"]');
+        let form = document.querySelectorAll('.form-wrapper')[0];
 
-        console.log(emailInput);
-        console.log(nameInput);
-        console.log(telInput);
-        console.log(textInput);
-        console.log(formSubmit);
+        // console.log(emailInput);
+        // console.log(nameInput);
+        // console.log(telInput);
+        // console.log(textInput);
+        // console.log(formSubmit);
 
         formSubmit.addEventListener('click', (e) => {
             e.preventDefault();
@@ -93,6 +94,11 @@ window.onload = function () {
                         // let success = document.querySelectorAll('.getintouch__success')[0];
                         // success.classList.add('getintouch__active');
                         alert("Ваши данные успешно отправлены!");
+                        form.classList.remove('form-active');
+                        nameInput.value = "";
+                        emailInput.value = "";
+                        telInput.value = "";
+                        textInput.value = "";
                     }
                 });
             }

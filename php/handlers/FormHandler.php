@@ -3,7 +3,7 @@ $postData = file_get_contents('php://input');
 $data = json_decode($postData, true);
 
 if (isset($data['name']) && isset($data['email']) && isset($data['tel'])) {
-    $to = 'edudukin2@gmail.com';
+    $to = 'reznicks777@gmail.com';
     $from = "chayka";
     $subject = 'New user message';
     $message = "

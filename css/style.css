@@ -1495,7 +1495,9 @@ body {
 	.attention {
 		padding-left: 2.5px;
 	}
-
+	.categories__item .categories__item_hover {
+		left: 0;
+	}
 }
 
 @media screen  and (max-width: 625px) {
